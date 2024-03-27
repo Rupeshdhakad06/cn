@@ -15,27 +15,27 @@ navigator.mediaDevices.getUserMedia(constraints)
 
   // var peers = [];
 
-// function handleSignaling(peer, signalingData) {
-//     // Implement signaling logic
-// }
+function handleSignaling(peer, signalingData) {
+    // Implement signaling logic
+}
 
-// function handlePeerConnection(peer) {
-//   peer.on('signal', data => {
-//       handleSignaling(peer, data);
-//   });
+function handlePeerConnection(peer) {
+  peer.on('signal', data => {
+      handleSignaling(peer, data);
+  });
 
-//   peer.on('data', data => {
-//       console.log('Received data:', data.toString());
-//   });
+  peer.on('data', data => {
+      console.log('Received data:', data.toString());
+  });
 
-//   peer.on('stream', stream => {
-//       console.log('Received stream:', stream);
-//       var newVideo = document.createElement('video');
-//       newVideo.srcObject = stream;
-//       newVideo.autoplay = true;
-//       document.body.appendChild(newVideo);
-//   });
-// }
+  peer.on('stream', stream => {
+      console.log('Received stream:', stream);
+      var newVideo = document.createElement('video');
+      newVideo.srcObject = stream;
+      newVideo.autoplay = true;
+      document.body.appendChild(newVideo);
+  });
+}
 
 
 
