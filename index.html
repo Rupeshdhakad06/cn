@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messaging App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-group">
+      <label for="yourId">Your ID:</label><br>
+      <textarea id="yourId" class="text-input"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="otherId">Other ID:</label><br>
+      <textarea id="otherId" class="text-input"></textarea>
+    </div>
+
+    <button id="connect" class="btn">Connect</button>
+
+    <div class="form-group">
+      <label for="yourMessage">Enter Message:</label><br>
+      <textarea id="yourMessage" class="text-input"></textarea>
+    </div>
+
+    <button id="send" class="btn">Send</button>
+
+    <pre id="messages" class="message-box"></pre>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer/simple-peer.min.js"></script>
+  <script src="bundle.js" charset="utf-8"></script>
+  <script src="index.js"></script>
+</body>
+</html>
